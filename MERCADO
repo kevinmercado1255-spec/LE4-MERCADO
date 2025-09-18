@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    char name[50], section[30];
-    float g1, g2, g3, g4, average;
+    char name[25], section[25];
+    float grade1, grade2, grade3, grade4, average;
 
     printf("Enter Complete Name: ");
     fgets(name, sizeof(name), stdin);
@@ -13,19 +13,19 @@ int main() {
     printf("\n");
 
     printf("Enter 1st Quarter Grade: ");
-    scanf("%f", &g1);
+    scanf("%f", &grade1);
     printf("Enter 2nd Quarter Grade: ");
-    scanf("%f", &g2);
+    scanf("%f", &grade2);
     printf("Enter 3rd Quarter Grade: ");
-    scanf("%f", &g3);
+    scanf("%f", &grade3);
     printf("Enter 4th Quarter Grade: ");
-    scanf("%f", &g4);
+    scanf("%f", &grade4);
 
-    average = (g1 + g2 + g3 + g4) / 4.0;
+    average = (grade1 + grade2 + grade3 + grade4) / 4.0;
 
     printf("\nStudent: %s", name);
     printf("Section: %s", section);
-    printf("General Average: %.2f\n", average);
+    printf("General Average: %.1f\n", average);
 
     if (average >= 90)
         printf("Remarks: Outstanding\n");
